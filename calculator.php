@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Calculator in PHP</title>
+    <title>Simpel lommeregner i PHP</title>
 </head>
 <body>
     <form method="GET">
         <input type="text" name="num1">
         <input type="text" name="num2">
         <select name="operators" id="operators">
-            <option>Choose</option>
+            <option>Vælg</option>
             <option>Plus (+)</option>
             <option>Minus (-)</option>
-            <option>Times (*)</option>
-            <option>Divide (/)</option>
+            <option>Gang (*)</option>
+            <option>Divider (/)</option>
         </select>
         <br>
-        <button type="submit" name="submit" value="submit">Calculate</button>
+        <button type="submit" name="submit" value="submit">Se resultatet</button>
     </form>
-    <p>Result:</p>
+    <p>Resultat:</p>
 
     <?php
 
@@ -28,7 +28,7 @@
 
         switch ($operator) {
             case "Vælg":
-                echo "You didn't choose a operator yet";
+                echo "Du har ikke valgt hvad du vil med dine tal endnu";
                 break;
             case "Plus (+)":
                 echo $result1 + $result2;
@@ -36,10 +36,10 @@
             case "Minus (-)":
                 echo $result1 - $result2;
                 break;
-            case "Times (*)":
+            case "Gange (*)":
                 echo $result1 * $result2;
                 break;
-            case "Divide (/)":
+            case "Dividere (/)":
                 echo $result1 / $result2;
                 break;
         }
